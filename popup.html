@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            width: 320px;
+            background-color: #1a1a1a;
+            color: #eee;
+        }
+
+        h1,h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #00c896;
+            border: none;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #00a77b;
+        }
+
+        #logOutput {
+            background: #111;
+            color: #00ffcc;
+            border: 1px solid #333;
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-line;
+            border-radius: 4px;
+        }
+
+        .stat {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        #status {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .emoji {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+        a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span class="emoji">&#128540;</span>Sub Catcher</h1>
+    <h2>Made By <a href="https://github.com/00xCanelo" target="_blank">00xCanelo</a></h2>
+    <button id="runScript">&#128640; Start the Hunt</button>
+
+    <div class="stat">Wildcard: <span id="wildcard">-</span></div>
+    <div class="stat">Subdomains: <span id="subdomainCount">0</span></div>
+
+    <h4><span class="emoji">&#128220;</span> Live Log</h4>
+    <div id="logOutput">Click Start to begin.</div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

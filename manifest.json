@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Sub Catcher",
+    "version": "1.0",
+    "description": "Catch subdomains from SecurityTrails and download them as txt file. Made By 00xCanelo",
+    "icons": {
+        "16": "Icons/icon16.png",
+        "48": "Icons/icon48.png",
+        "128": "Icons/icon128.png"
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://securitytrails.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "Icons/icon16.png",
+            "48": "Icons/icon48.png",
+            "128": "Icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://securitytrails.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
