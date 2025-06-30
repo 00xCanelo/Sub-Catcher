@@ -1,8 +1,1 @@
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.type === "log") {
-        chrome.storage.local.get({ log: [] }, (data) => {
-            const updatedLog = [...data.log, message.payload];
-            chrome.storage.local.set({ log: updatedLog });
-        });
-    }
-});
+chrome.runtime.onMessage.addListener((o,e,l)=>{"log"===o.type&&chrome.storage.local.get({log:[]},e=>{e=[...e.log,o.payload];chrome.storage.local.set({log:e})})});
