@@ -1,5 +1,5 @@
-# 00xCanelo Sub Catcher
-
+# Sub Catcher
+## Made by: 00xCanelo
 
 [Extension Icon: Icons/icon128.png]
 
