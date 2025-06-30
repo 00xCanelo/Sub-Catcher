@@ -48,9 +48,8 @@ Sub Catcher is a Chrome extension designed to help security researchers, pentest
     
 2. Click the **Sub Catcher** extension icon in your toolbar.
 3. The extension will automatically begin crawling and extracting subdomains.
-4. There is button `Start The Hunt` will start also the crawling
-5. Progress and logs will be displayed in the popup.
-6. When finished, the extension downloads a text file with all collected subdomains.
+4. Progress and logs will be displayed in the popup.
+5. When finished, the extension downloads a text file with all collected subdomains.
 
 ---
 
